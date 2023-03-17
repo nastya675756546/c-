@@ -60,6 +60,12 @@
     <Compile Include="ZD1.Designer.cs">
       <DependentUpon>ZD1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ZD10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD10.Designer.cs">
+      <DependentUpon>ZD10.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZD2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,24 @@
     <Compile Include="ZD6.Designer.cs">
       <DependentUpon>ZD6.cs</DependentUpon>
     </Compile>
+    <Compile Include="ZD7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD7.Designer.cs">
+      <DependentUpon>ZD7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD8.Designer.cs">
+      <DependentUpon>ZD8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD9.Designer.cs">
+      <DependentUpon>ZD9.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +129,9 @@
     <EmbeddedResource Include="ZD1.resx">
       <DependentUpon>ZD1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ZD10.resx">
+      <DependentUpon>ZD10.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ZD2.resx">
       <DependentUpon>ZD2.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +146,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ZD6.resx">
       <DependentUpon>ZD6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD7.resx">
+      <DependentUpon>ZD7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD8.resx">
+      <DependentUpon>ZD8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD9.resx">
+      <DependentUpon>ZD9.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

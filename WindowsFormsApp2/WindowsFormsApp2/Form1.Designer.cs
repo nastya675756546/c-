@@ -34,6 +34,7 @@
             this.геометрияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.физикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ветвленияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ветвленияToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.рАБОТАСТЕКСТОМToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.множестваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.циклыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,7 @@
             this.линейныеСпискиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рАБОТАCМАССИВАМИToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.массивыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ветвленияToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.рекурсииToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,12 +102,20 @@
             this.ветвленияToolStripMenuItem.Text = "Ветвления";
             this.ветвленияToolStripMenuItem.Click += new System.EventHandler(this.ветвленияToolStripMenuItem_Click);
             // 
+            // ветвленияToolStripMenuItem1
+            // 
+            this.ветвленияToolStripMenuItem1.Name = "ветвленияToolStripMenuItem1";
+            this.ветвленияToolStripMenuItem1.Size = new System.Drawing.Size(289, 22);
+            this.ветвленияToolStripMenuItem1.Text = "Ветвления";
+            this.ветвленияToolStripMenuItem1.Click += new System.EventHandler(this.ветвленияToolStripMenuItem1_Click);
+            // 
             // рАБОТАСТЕКСТОМToolStripMenuItem
             // 
             this.рАБОТАСТЕКСТОМToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.множестваToolStripMenuItem,
             this.циклыToolStripMenuItem,
-            this.рекурсииToolStripMenuItem});
+            this.рекурсииToolStripMenuItem,
+            this.рекурсииToolStripMenuItem1});
             this.рАБОТАСТЕКСТОМToolStripMenuItem.Name = "рАБОТАСТЕКСТОМToolStripMenuItem";
             this.рАБОТАСТЕКСТОМToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.рАБОТАСТЕКСТОМToolStripMenuItem.Text = "РАБОТА С ТЕКСТОМ";
@@ -129,7 +138,8 @@
             // 
             this.рекурсииToolStripMenuItem.Name = "рекурсииToolStripMenuItem";
             this.рекурсииToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.рекурсииToolStripMenuItem.Text = "Рекурсии";
+            this.рекурсииToolStripMenuItem.Text = "for";
+            this.рекурсииToolStripMenuItem.Click += new System.EventHandler(this.рекурсииToolStripMenuItem_Click);
             // 
             // рАБОТАСОСПИСКАМИToolStripMenuItem
             // 
@@ -146,17 +156,19 @@
             this.спискиToolStripMenuItem.Name = "спискиToolStripMenuItem";
             this.спискиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.спискиToolStripMenuItem.Text = "Списки";
+            this.спискиToolStripMenuItem.Click += new System.EventHandler(this.спискиToolStripMenuItem_Click);
             // 
             // таблицыToolStripMenuItem
             // 
             this.таблицыToolStripMenuItem.Name = "таблицыToolStripMenuItem";
             this.таблицыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.таблицыToolStripMenuItem.Text = "Таблицы";
+            this.таблицыToolStripMenuItem.Click += new System.EventHandler(this.таблицыToolStripMenuItem_Click);
             // 
             // линейныеСпискиToolStripMenuItem
             // 
             this.линейныеСпискиToolStripMenuItem.Name = "линейныеСпискиToolStripMenuItem";
-            this.линейныеСпискиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.линейныеСпискиToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.линейныеСпискиToolStripMenuItem.Text = "Линейные списки";
             // 
             // рАБОТАCМАССИВАМИToolStripMenuItem
@@ -170,15 +182,15 @@
             // массивыToolStripMenuItem
             // 
             this.массивыToolStripMenuItem.Name = "массивыToolStripMenuItem";
-            this.массивыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.массивыToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.массивыToolStripMenuItem.Text = "Массивы";
             // 
-            // ветвленияToolStripMenuItem1
+            // рекурсииToolStripMenuItem1
             // 
-            this.ветвленияToolStripMenuItem1.Name = "ветвленияToolStripMenuItem1";
-            this.ветвленияToolStripMenuItem1.Size = new System.Drawing.Size(289, 22);
-            this.ветвленияToolStripMenuItem1.Text = "Ветвления";
-            this.ветвленияToolStripMenuItem1.Click += new System.EventHandler(this.ветвленияToolStripMenuItem1_Click);
+            this.рекурсииToolStripMenuItem1.Name = "рекурсииToolStripMenuItem1";
+            this.рекурсииToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.рекурсииToolStripMenuItem1.Text = "Рекурсии";
+            this.рекурсииToolStripMenuItem1.Click += new System.EventHandler(this.рекурсииToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -215,6 +227,7 @@
         private System.Windows.Forms.ToolStripMenuItem рАБОТАCМАССИВАМИToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem массивыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ветвленияToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem рекурсииToolStripMenuItem1;
     }
 }
 

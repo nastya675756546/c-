@@ -10,59 +10,66 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class ZD6 : Form
+    public partial class ZD7 : Form
     {
-        public ZD6()
+        public ZD7()
         {
             InitializeComponent();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             Program.f1.Show();
             this.Hide();
+            
         }
 
-        int eps = 0;
-        double s0 = 0;
-        double n = 0;
-        int s = 0;
+        int b = 0;
+        int[] n;
+        Random r = new Random();
+        int sum = 0;
+        string str = "";
 
         private void button1_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
 
-             try
+            try
             {
-                eps = int.Parse(textBox1.Text);
-               
-            } 
+                b = int.Parse(textBox1.Text);
+
+            }
             catch (Exception)
             {
 
                 MessageBox.Show("Неверное значение");
-                
+
             }
 
-            if (eps>0)
+            if (b > 0)
             {
-                while (s0 <= eps)
+                n = new int[b];
+
+                for (int i = 0; i < b; i++)
                 {
-                    n++;
-                    s0 = s0 + 1 / n;
+                    n[i] = r.Next(-100, 100);
+
+                    str += Convert.ToString(n[i])+" ";
+                   
                 }
 
-                s = Convert.ToInt32(s0);
+                listView1.Items.Add(str+ "\r\n");
 
-                listView1.Items.Add("n=" + n.ToString() + "\r\n");
-                listView1.Items.Add("s=" + s.ToString() + "\r\n");
+                sum = n.Sum();
 
+                listView1.Items.Add("Сумма элементов:" + sum.ToString());
             }
             else
             {
-                listView1.Items.Add("eps<0");
+                listView1.Items.Add("b < 0");
             }
-
+           
         }
     }
 }
