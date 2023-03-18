@@ -34,3 +34,5 @@ D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD7.resources
 D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD8.resources
 D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD10.resources
 D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD9.resources
+D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD11.resources
+D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD12.resources

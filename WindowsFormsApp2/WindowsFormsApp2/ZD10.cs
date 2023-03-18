@@ -25,11 +25,15 @@ namespace WindowsFormsApp2
 
         string str = "";
 
+        int f0 = 0;
+
         private void ZD10_Load(object sender, EventArgs e)
         {
-            f = 4;
+            f0 = 4;
 
-            for (int i = 0; i < 4 ; i++)
+            f = f0;
+
+            for (int i = 0; i < f0 ; i++)
             {
                 str = "";
                 for (int j = 0; j < f; j++)
@@ -42,6 +46,12 @@ namespace WindowsFormsApp2
 
                 f--;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.f1.Show();
+            this.Hide();
         }
     }
 }
