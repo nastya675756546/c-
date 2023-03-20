@@ -76,5 +76,22 @@ namespace WindowsFormsApp2
             Program.zd10.Show();
             this.Hide();
         }
+
+        private void линейныеСпискиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.zd12.Show();
+            this.Hide();
+        }
+
+        private void связанныеСпискиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void массивыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.zd13.Show();
+            this.Hide();
+        }
     }
 }

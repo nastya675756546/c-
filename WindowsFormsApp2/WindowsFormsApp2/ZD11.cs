@@ -17,16 +17,15 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.zd9.listView1.Items.Add( "- " + this.comboBox1.Text);
+            Program.zd9.textBox1.Text += "- " + this.comboBox1.Text + "\r\n";
+
             this.Hide();
 
             comboBox1.Items.Add(comboBox1.Text);
 
-            Program.zd12.checkedListBox1.Items.Add("- " + comboBox1.Text);
         }
     }
 }

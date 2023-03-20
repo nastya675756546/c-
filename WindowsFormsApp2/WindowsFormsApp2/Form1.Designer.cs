@@ -39,13 +39,14 @@
             this.множестваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.циклыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рекурсииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.рекурсииToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.рАБОТАСОСПИСКАМИToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.спискиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.таблицыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.линейныеСпискиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рАБОТАCМАССИВАМИToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.массивыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рекурсииToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.связанныеСпискиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,30 +124,38 @@
             // множестваToolStripMenuItem
             // 
             this.множестваToolStripMenuItem.Name = "множестваToolStripMenuItem";
-            this.множестваToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.множестваToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.множестваToolStripMenuItem.Text = "Множества";
             this.множестваToolStripMenuItem.Click += new System.EventHandler(this.множестваToolStripMenuItem_Click);
             // 
             // циклыToolStripMenuItem
             // 
             this.циклыToolStripMenuItem.Name = "циклыToolStripMenuItem";
-            this.циклыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.циклыToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.циклыToolStripMenuItem.Text = "do ... while, while";
             this.циклыToolStripMenuItem.Click += new System.EventHandler(this.циклыToolStripMenuItem_Click);
             // 
             // рекурсииToolStripMenuItem
             // 
             this.рекурсииToolStripMenuItem.Name = "рекурсииToolStripMenuItem";
-            this.рекурсииToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.рекурсииToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.рекурсииToolStripMenuItem.Text = "for";
             this.рекурсииToolStripMenuItem.Click += new System.EventHandler(this.рекурсииToolStripMenuItem_Click);
+            // 
+            // рекурсииToolStripMenuItem1
+            // 
+            this.рекурсииToolStripMenuItem1.Name = "рекурсииToolStripMenuItem1";
+            this.рекурсииToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.рекурсииToolStripMenuItem1.Text = "Рекурсии";
+            this.рекурсииToolStripMenuItem1.Click += new System.EventHandler(this.рекурсииToolStripMenuItem1_Click);
             // 
             // рАБОТАСОСПИСКАМИToolStripMenuItem
             // 
             this.рАБОТАСОСПИСКАМИToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.спискиToolStripMenuItem,
             this.таблицыToolStripMenuItem,
-            this.линейныеСпискиToolStripMenuItem});
+            this.линейныеСпискиToolStripMenuItem,
+            this.связанныеСпискиToolStripMenuItem});
             this.рАБОТАСОСПИСКАМИToolStripMenuItem.Name = "рАБОТАСОСПИСКАМИToolStripMenuItem";
             this.рАБОТАСОСПИСКАМИToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.рАБОТАСОСПИСКАМИToolStripMenuItem.Text = "РАБОТА СО СПИСКАМИ";
@@ -168,8 +177,9 @@
             // линейныеСпискиToolStripMenuItem
             // 
             this.линейныеСпискиToolStripMenuItem.Name = "линейныеСпискиToolStripMenuItem";
-            this.линейныеСпискиToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.линейныеСпискиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.линейныеСпискиToolStripMenuItem.Text = "Линейные списки";
+            this.линейныеСпискиToolStripMenuItem.Click += new System.EventHandler(this.линейныеСпискиToolStripMenuItem_Click);
             // 
             // рАБОТАCМАССИВАМИToolStripMenuItem
             // 
@@ -182,15 +192,16 @@
             // массивыToolStripMenuItem
             // 
             this.массивыToolStripMenuItem.Name = "массивыToolStripMenuItem";
-            this.массивыToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.массивыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.массивыToolStripMenuItem.Text = "Массивы";
+            this.массивыToolStripMenuItem.Click += new System.EventHandler(this.массивыToolStripMenuItem_Click);
             // 
-            // рекурсииToolStripMenuItem1
+            // связанныеСпискиToolStripMenuItem
             // 
-            this.рекурсииToolStripMenuItem1.Name = "рекурсииToolStripMenuItem1";
-            this.рекурсииToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.рекурсииToolStripMenuItem1.Text = "Рекурсии";
-            this.рекурсииToolStripMenuItem1.Click += new System.EventHandler(this.рекурсииToolStripMenuItem1_Click);
+            this.связанныеСпискиToolStripMenuItem.Name = "связанныеСпискиToolStripMenuItem";
+            this.связанныеСпискиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.связанныеСпискиToolStripMenuItem.Text = "Связанные списки";
+            this.связанныеСпискиToolStripMenuItem.Click += new System.EventHandler(this.связанныеСпискиToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -228,6 +239,7 @@
         private System.Windows.Forms.ToolStripMenuItem массивыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ветвленияToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem рекурсииToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem связанныеСпискиToolStripMenuItem;
     }
 }
 
