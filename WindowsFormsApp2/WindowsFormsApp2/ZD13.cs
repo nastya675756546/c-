@@ -28,7 +28,7 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.cl
+
             n = Convert.ToInt32(numericUpDown1.Value);
             vs = new int[n, n];
             for (int i = 0; i < n; i++)
@@ -58,6 +58,7 @@ namespace WindowsFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             for (int i = 0; i < n; i++)
             {
                 dataGridView2.Columns.Add("", "");
@@ -77,6 +78,7 @@ namespace WindowsFormsApp2
                     
                 }
             }
+           
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
@@ -84,6 +86,23 @@ namespace WindowsFormsApp2
                     dataGridView2.Rows[i].Cells[j].Value = vs[i, j];
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Columns.Clear();
+
+            dataGridView1.Rows.Clear();
+
+            dataGridView2.Rows.Clear();
+
+            dataGridView2.Columns.Clear();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Program.f1.Show();
+            this.Hide();
         }
     }
 }

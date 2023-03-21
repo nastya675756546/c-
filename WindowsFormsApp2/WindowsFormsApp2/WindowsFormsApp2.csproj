@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +84,30 @@
     </Compile>
     <Compile Include="ZD13.Designer.cs">
       <DependentUpon>ZD13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD14.Designer.cs">
+      <DependentUpon>ZD14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD15.Designer.cs">
+      <DependentUpon>ZD15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD16.Designer.cs">
+      <DependentUpon>ZD16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD17.Designer.cs">
+      <DependentUpon>ZD17.cs</DependentUpon>
     </Compile>
     <Compile Include="ZD2.cs">
       <SubType>Form</SubType>
@@ -158,6 +183,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ZD13.resx">
       <DependentUpon>ZD13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD14.resx">
+      <DependentUpon>ZD14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD15.resx">
+      <DependentUpon>ZD15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD16.resx">
+      <DependentUpon>ZD16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD17.resx">
+      <DependentUpon>ZD17.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ZD2.resx">
       <DependentUpon>ZD2.cs</DependentUpon>

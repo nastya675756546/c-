@@ -105,5 +105,11 @@ namespace WindowsFormsApp2
         {
             toolTip3.SetToolTip(button3, "выделите текст и нажмите вставить");
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Program.f1.Show();
+            this.Hide();
+        }
     }
 }
