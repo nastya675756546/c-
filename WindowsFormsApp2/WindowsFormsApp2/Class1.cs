@@ -17,7 +17,10 @@ namespace WindowsFormsApp2
         }
         public static double koordinata(double a, double b)
         {
-            double k = Math.Tan(a / b);
+            double c0 = a * a+ b * b;
+            double c = Math.Sqrt(c0);
+            double cos = (b * b + c * c - a * a)/(2*b*c);
+            double k =Math.Round( Math.Cos(cos),3);
             return k;
         }
 

@@ -26,6 +26,8 @@ namespace WindowsFormsApp2
         public static ZD15 zd15 = new ZD15();
         public static ZD16 zd16 = new ZD16();
         public static ZD17 zd17 = new ZD17();
+        public static ZD18 zd18 = new ZD18();
+        public static ZD19 zd19 = new ZD19();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

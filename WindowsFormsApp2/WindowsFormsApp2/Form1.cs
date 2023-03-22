@@ -117,5 +117,17 @@ namespace WindowsFormsApp2
             Program.zd17.Show();
             this.Hide();
         }
+
+        private void подпрограммыметодыToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Program.zd18.Show();
+            this.Hide();
+        }
+
+        private void рАБОТАСГРАФИКАМИToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.zd19.Show();
+            this.Hide();
+        }
     }
 }

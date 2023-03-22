@@ -33,9 +33,18 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            s = int.Parse(textBox1.Text);
+            try
+            {
+                s = int.Parse(textBox1.Text);
 
-            t= int.Parse(textBox1.Text);
+                t = int.Parse(textBox1.Text);
+            }
+            catch (Exception)
+            {
+
+               
+            }
+            
 
             Sum =Math.Round(Class1.g(1.2, s) + Class1.g(t, s) - Class1.g(2 * s, 1.5 * t),3);
 
