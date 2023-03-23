@@ -129,5 +129,23 @@ namespace WindowsFormsApp2
             Program.zd19.Show();
             this.Hide();
         }
+
+        private void секундомерToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.zd20.Show();
+            this.Hide();
+        }
+
+        private void анимацияToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Program.zd21.Show();
+            this.Hide();
+        }
+
+        private void файлToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.zd22.Show();
+            this.Hide();
+        }
     }
 }

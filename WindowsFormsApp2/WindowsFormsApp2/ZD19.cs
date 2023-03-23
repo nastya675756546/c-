@@ -17,52 +17,130 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        double valueX = 0;
+        double x = 0;
+        double endX = 0;
 
         double a = 0;
+        double b = 0;
+        double c = 0;
 
         double k = 0;
+        double h = 0;
 
-        double[] x;
-
-
-
-        Random Random = new Random();
+        Random r = new Random();
 
         private void button1_Click(object sender, EventArgs e)
         {
-            x = new double[Random.Next(5, 10)];
-            if (radioButton1.Checked==true)
+            
+            if (radioButton1.Checked==false && radioButton2.Checked==false)
             {
-                try
-                {
-                    double valueX = double.Parse(textBox1.Text);
+                MessageBox.Show("Выберите график");
+                return;
+            }
 
-                    //double a = double.Parse(textBox2.Text);
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("Введите значения");
+                return;
+            }
+
+            try
+            {
+                x = double.Parse(textBox1.Text);
+                a = double.Parse(textBox2.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Неверный формат");
+                return;
+            }
+
+            if (radioButton1.Checked ==true)
+            {
+                h = 0.1;
+                
+                endX = x + h * 1000;
+
+                if (x > 0 && x < 1)
+                {
+                    while (x<=endX)
+                    {
+                        k = a * (x + 1) + 2;
+
+                        chart1.Series[0].Points.AddXY(x, k);
+
+                        x += h;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("не удолетворяет условию: 0 < x < 1");
+                }
+            }
+            if (radioButton2.Checked == true)
+            {
+                h = 2;
+               
+                endX = x + h * 10;
+
+                b = r.Next(-100, 100);
+
+                c = r.Next(-100, 100);
+
+                if (x > -10 && x < 10)
+                {
+                    while (x<=endX)
+                    {
+                        k = a * x * x + b * x + c;
+
+                        chart1.Series[1].Points.AddXY(x, k);
+
+                        x += h;
+                    }
                    
                 }
-                catch (Exception)
-                {
-
-                    MessageBox.Show("неверное значение");
-                }
-
-                for (int i = 0; i < x.Length; i++)
-                {
-                    x[i] = valueX;
-                    valueX = valueX + 0.1;
-                    textBox2.Text += x[i].ToString();
-                }
-
 
             }
-            else
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char k = e.KeyChar;
+            if (!Char.IsDigit(k) && k !=',' && k != 8)
             {
-                if (radioButton2.Checked==true)
-                {
-                    
-                }
+                e.Handled = true;
             }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char k = e.KeyChar;
+            if (!Char.IsDigit(k) && k != ',' && k != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked==true)
+            {
+                chart1.Series[0].Points.Clear();
+            }
+            if (radioButton2.Checked==true)
+            {
+                chart1.Series[1].Points.Clear();
+            }
+            
+            textBox1.Clear();
+            textBox2.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Program.f1.Show();
+            this.Hide();
         }
     }
 }
