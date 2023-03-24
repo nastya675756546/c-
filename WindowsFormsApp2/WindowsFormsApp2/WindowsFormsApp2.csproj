@@ -146,6 +146,18 @@
     <Compile Include="ZD22.Designer.cs">
       <DependentUpon>ZD22.cs</DependentUpon>
     </Compile>
+    <Compile Include="ZD23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD23.Designer.cs">
+      <DependentUpon>ZD23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD24.Designer.cs">
+      <DependentUpon>ZD24.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZD3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +258,12 @@
     <EmbeddedResource Include="ZD22.resx">
       <DependentUpon>ZD22.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ZD23.resx">
+      <DependentUpon>ZD23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD24.resx">
+      <DependentUpon>ZD24.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ZD3.resx">
       <DependentUpon>ZD3.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,6 +303,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
