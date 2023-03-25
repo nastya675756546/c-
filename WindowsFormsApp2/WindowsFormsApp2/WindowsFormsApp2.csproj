@@ -158,6 +158,12 @@
     <Compile Include="ZD24.Designer.cs">
       <DependentUpon>ZD24.cs</DependentUpon>
     </Compile>
+    <Compile Include="ZD25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD25.Designer.cs">
+      <DependentUpon>ZD25.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZD3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ZD24.resx">
       <DependentUpon>ZD24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD25.resx">
+      <DependentUpon>ZD25.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ZD3.resx">
       <DependentUpon>ZD3.cs</DependentUpon>

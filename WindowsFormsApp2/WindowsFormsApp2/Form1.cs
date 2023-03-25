@@ -159,5 +159,11 @@ namespace WindowsFormsApp2
             Program.zd24.Show();
             this.Hide();
         }
+
+        private void текстовыйФайлToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.zd25.Show();
+            this.Hide();
+        }
     }
 }

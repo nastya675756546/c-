@@ -33,6 +33,7 @@ namespace WindowsFormsApp2
         public static ZD22 zd22 = new ZD22();
         public static ZD23 zd23 = new ZD23();
         public static ZD24 zd24 = new ZD24();
+        public static ZD25 zd25 = new ZD25();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

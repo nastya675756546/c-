@@ -58,7 +58,7 @@ namespace WindowsFormsApp2
             statusStrip1.Items.Add(infOfileLabel);
 
             statusStrip1.Items.Add(fileLabel);
-           
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -88,14 +88,14 @@ namespace WindowsFormsApp2
 
             text = textBox1.Text;
 
-            if (saveFileDialog1.ShowDialog()==DialogResult.Cancel)
+            if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
             {
                 return;
             }
             saveFile = saveFileDialog1.FileName;
 
             File.WriteAllText(saveFile, textBox1.Text);
-            
+
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -138,14 +138,35 @@ namespace WindowsFormsApp2
         }
 
         string[] str;
+        string[] str0;
+        string wordp;
+        string[] words;
 
         private void button5_Click(object sender, EventArgs e)
         {
-            str = textBox1.Text.Split(' ', '.',',',':',';');
-            for (int i = 0; i < str.Length; i++)
+            
+            wordp = "";
+            string word = "";
+            int count = 0;
+            int count1 = 0;
+            int count2 = 0;
+            int count3 = 0;
+            string word1 = "";
+            string word2 = "";
+            string word3 = "";
+            int value = 0;
+
+            str = textBox1.Text.Split(' ', '.', ',', ':', ';');
+            str0 = str.Distinct().ToArray();
+            value = str0.Length;
+            words =new string[value];
+            //textBox1.Text += "\r\n";
+            for (int i = 0; i < value; i++)
             {
-               // str[i];
+                words[i] = str0[i];
+                textBox1.Text +=words[i]+" "+ "\r\n";
             }
+            
         }
     }
 }
