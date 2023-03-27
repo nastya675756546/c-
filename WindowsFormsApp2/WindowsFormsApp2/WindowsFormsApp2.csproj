@@ -164,6 +164,24 @@
     <Compile Include="ZD25.Designer.cs">
       <DependentUpon>ZD25.cs</DependentUpon>
     </Compile>
+    <Compile Include="ZD26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD26.Designer.cs">
+      <DependentUpon>ZD26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD27.Designer.cs">
+      <DependentUpon>ZD27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZD28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZD28.Designer.cs">
+      <DependentUpon>ZD28.cs</DependentUpon>
+    </Compile>
     <Compile Include="ZD3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +290,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ZD25.resx">
       <DependentUpon>ZD25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD26.resx">
+      <DependentUpon>ZD26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD27.resx">
+      <DependentUpon>ZD27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZD28.resx">
+      <DependentUpon>ZD28.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ZD3.resx">
       <DependentUpon>ZD3.cs</DependentUpon>

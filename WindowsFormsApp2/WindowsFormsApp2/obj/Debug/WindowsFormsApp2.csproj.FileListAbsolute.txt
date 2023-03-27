@@ -54,3 +54,6 @@ D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD24.resource
 D:\c-\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\Interop.WMPLib.dll
 D:\c-\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\AxInterop.WMPLib.dll
 D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD25.resources
+D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD26.resources
+D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD27.resources
+D:\c-\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ZD28.resources

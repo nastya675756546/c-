@@ -145,7 +145,7 @@ namespace WindowsFormsApp2
         private void button5_Click(object sender, EventArgs e)
         {
             
-            wordp = "";
+            /*wordp = "";
             string word = "";
             int count = 0;
             int count1 = 0;
@@ -154,9 +154,9 @@ namespace WindowsFormsApp2
             string word1 = "";
             string word2 = "";
             string word3 = "";
-            int value = 0;
+            int value = 0;*/
 
-            str = textBox1.Text.Split(' ', '.', ',', ':', ';');
+            /*str = textBox1.Text.Split(' ', '.', ',', ':', ';');
             str0 = str.Distinct().ToArray();
             value = str0.Length;
             words =new string[value];
@@ -165,8 +165,13 @@ namespace WindowsFormsApp2
             {
                 words[i] = str0[i];
                 textBox1.Text +=words[i]+" "+ "\r\n";
-            }
+            }*/
             
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

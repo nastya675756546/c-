@@ -21,7 +21,7 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
 
-            openFileDialog1.Filter = "Text files(*.MP3)|*.MP3|All files(*.*)|*.*";
+            openFileDialog1.Filter = "Text files(*.MP4)|*.MP3|All files(*.*)|*.*";
 
             infOfileLabel = new ToolStripLabel();
 

@@ -16,33 +16,74 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-
+        int i = 0;
+        int value=0;
         private void ZD25_Load(object sender, EventArgs e)
         {
             
         }
-        int i = 1;
-
+        string text = "";
         private void button1_Click(object sender, EventArgs e)
         {
-            if (i>1)
+            
+            try
             {
-                textBox2.Text += "000" + i.ToString() + " " + textBox1.Text;
+                text = textBox1.Lines[value].ToString();
+
+                i++;
+                
+                if (i > 0 && i < 10 && i < 100 && i < 1000)
+                {
+                    textBox2.Text += "000" + i.ToString() + " " + text + "\r\n";
+                }
+
+                if (i > 10 && i < 100 && i < 100)
+                {
+                    textBox2.Text += "00" + i.ToString() + " " + text + "\r\n";
+                }
+
+                if (i > 100 && i < 1000)
+                {
+                    textBox2.Text += "0" + i.ToString() + " " + text + "\r\n";
+                }
+
+                if (i > 1000)
+                {
+                    textBox2.Text += i.ToString() + " " + text + "\r\n";
+                }
+
+                value++;
             }
-            if(i>10)
+            catch (Exception)
             {
-                textBox2.Text += "00" + i.ToString() + " " + textBox1.Text;
-            }
-            if (i>100)
-            {
-                textBox2.Text += "0" + i.ToString() + " " + textBox1.Text;
-            }
-            if (i>1000)
-            {
-                textBox2.Text += i.ToString() + " " + textBox1.Text;
+
+                MessageBox.Show("Введите значение");
             }
             
-            i++;
+            
+            
+            
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            toolTip1.SetToolTip(textBox2, "textBox2");
+        }
+
+        private void textBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            toolTip1.SetToolTip(textBox1, "textBox1");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Program.f1.Show();
+            this.Hide();
         }
     }
 }
