@@ -54,6 +54,22 @@ namespace WindowsFormsApp2
         private void button2_Click(object sender, EventArgs e)
         {
             Program.f1.Show();
+            this.Hide();
+        }
+
+        private void ZD2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

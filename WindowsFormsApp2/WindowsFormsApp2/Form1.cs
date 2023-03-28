@@ -83,10 +83,7 @@ namespace WindowsFormsApp2
             this.Hide();
         }
 
-        private void связанныеСпискиToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
 
         private void массивыToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -138,7 +135,7 @@ namespace WindowsFormsApp2
 
         private void анимацияToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Program.zd21.Show();
+            Program.zd12.Show();
             this.Hide();
         }
 
@@ -187,6 +184,17 @@ namespace WindowsFormsApp2
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void справочнаяСистемаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.zd21.Show();
+            this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

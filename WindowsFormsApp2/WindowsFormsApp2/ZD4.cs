@@ -34,5 +34,19 @@ namespace WindowsFormsApp2
             }
             
         }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char k = e.KeyChar;
+            if ((k < 'A' || k > 'z') && k != '\b' && k != '.' && k != ' ')
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

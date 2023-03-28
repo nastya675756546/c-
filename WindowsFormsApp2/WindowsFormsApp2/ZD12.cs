@@ -15,50 +15,58 @@ namespace WindowsFormsApp2
         public ZD12()
         {
             InitializeComponent();
+           
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             Program.f1.Show();
             this.Hide();
         }
 
-       public static List<T>remove<T>(List<T> list)
-        {
-            return new HashSet<T>(list).ToList();
-        }
-        string text="!";
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            char[] list = textBox1.Text.ToCharArray();
-            for (int i = 0; i < list.Length; i++)
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled == true)
             {
-                if (list[i].Equals(list[i]))
-                {
-                   
-                }
-                else
-                {
-                    textBox1.Text += list[i];
-                }
+                timer1.Enabled = false;
+
+                button3.Text = "Возобновить";
             }
-            /*List<char> list= textBox1.Text.ToList();
-            List<char> list0 = remove(list);
-            list0.AddRange(text);
-            textBox1.Text += text;
-            /*List<char> listlist = textBox1.Text.ToList();
-            List<char> list = listlist.Union(listlist).ToList();
-            list.AddRange(text);
-            textBox1.Text = text;
-            //var text = textBox1.Text.GroupBy(x=>x).Any(g=>g.Count()>1);
-           /* var t = textBox1.Text.Union(textBox1.Text); 
-           */
-            //listView1.Items.Add(t.ToString());
-            /*char[]t = textBox1.Text.ToCharArray();
-            string f = t.Distinct().ToString();
-            text = f.ToString();
-            textBox1.Text = text;*/
+            else
+            {
+                timer1.Enabled = true;
+
+                button3.Text = "Остановить";
+            }
+
+        }
+        int i = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (i % 2 == 0)
+            {
+                pictureBox1.Image = Image.FromFile(@"E:\c-\WindowsFormsApp2\1.png");
+            }
+            else
+            {
+                pictureBox1.Image = Image.FromFile(@"E:\c-\WindowsFormsApp2\2.png");
+            }
+            i++;
+        }
+
+        private void ZD12_Load(object sender, EventArgs e)
+        {
+            button3.Text = "Остановить";
+
+           
+
+            timer1.Enabled = true;
         }
     }
 }
