@@ -53,7 +53,6 @@
             this.подпрограммыметодыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.подпрограммыметодыToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.подпрограммыметодыToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.рАБОТАСГРАФИКАМИToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.аНИМАЦИЯToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.секундомерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.анимацияToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,16 +65,19 @@
             this.записиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.файлыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рАБОТАСФАЙЛАМИРАЗЛИЧНЫХТИПОВToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.рАБОТАСГРАФИКАМИToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.главноеМенюToolStripMenuItem});
+            this.главноеМенюToolStripMenuItem,
+            this.выходToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(440, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -275,13 +277,6 @@
             this.подпрограммыметодыToolStripMenuItem2.Text = "Подпрограммы (методы)";
             this.подпрограммыметодыToolStripMenuItem2.Click += new System.EventHandler(this.подпрограммыметодыToolStripMenuItem2_Click);
             // 
-            // рАБОТАСГРАФИКАМИToolStripMenuItem
-            // 
-            this.рАБОТАСГРАФИКАМИToolStripMenuItem.Name = "рАБОТАСГРАФИКАМИToolStripMenuItem";
-            this.рАБОТАСГРАФИКАМИToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
-            this.рАБОТАСГРАФИКАМИToolStripMenuItem.Text = "РАБОТА С ГРАФИКАМИ";
-            this.рАБОТАСГРАФИКАМИToolStripMenuItem.Click += new System.EventHandler(this.рАБОТАСГРАФИКАМИToolStripMenuItem_Click);
-            // 
             // аНИМАЦИЯToolStripMenuItem
             // 
             this.аНИМАЦИЯToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -356,14 +351,14 @@
             // записиToolStripMenuItem
             // 
             this.записиToolStripMenuItem.Name = "записиToolStripMenuItem";
-            this.записиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.записиToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.записиToolStripMenuItem.Text = "Записи";
             this.записиToolStripMenuItem.Click += new System.EventHandler(this.записиToolStripMenuItem_Click);
             // 
             // файлыToolStripMenuItem
             // 
             this.файлыToolStripMenuItem.Name = "файлыToolStripMenuItem";
-            this.файлыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.файлыToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.файлыToolStripMenuItem.Text = "Файлы";
             this.файлыToolStripMenuItem.Click += new System.EventHandler(this.файлыToolStripMenuItem_Click);
             // 
@@ -374,12 +369,29 @@
             this.рАБОТАСФАЙЛАМИРАЗЛИЧНЫХТИПОВToolStripMenuItem.Text = "РАБОТА С ФАЙЛАМИ  РАЗЛИЧНЫХ ТИПОВ";
             this.рАБОТАСФАЙЛАМИРАЗЛИЧНЫХТИПОВToolStripMenuItem.Click += new System.EventHandler(this.рАБОТАСФАЙЛАМИРАЗЛИЧНЫХТИПОВToolStripMenuItem_Click);
             // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // рАБОТАСГРАФИКАМИToolStripMenuItem
+            // 
+            this.рАБОТАСГРАФИКАМИToolStripMenuItem.Name = "рАБОТАСГРАФИКАМИToolStripMenuItem";
+            this.рАБОТАСГРАФИКАМИToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
+            this.рАБОТАСГРАФИКАМИToolStripMenuItem.Text = "РАБОТА С ГРАФИКАМИ";
+            this.рАБОТАСГРАФИКАМИToolStripMenuItem.Click += new System.EventHandler(this.рАБОТАСГРАФИКАМИToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ClientSize = new System.Drawing.Size(440, 53);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -417,7 +429,6 @@
         private System.Windows.Forms.ToolStripMenuItem подпрограммыметодыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem подпрограммыметодыToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem подпрограммыметодыToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem рАБОТАСГРАФИКАМИToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem аНИМАЦИЯToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem секундомерToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem анимацияToolStripMenuItem1;
@@ -430,6 +441,8 @@
         private System.Windows.Forms.ToolStripMenuItem записиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem файлыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem рАБОТАСФАЙЛАМИРАЗЛИЧНЫХТИПОВToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem рАБОТАСГРАФИКАМИToolStripMenuItem;
     }
 }
 

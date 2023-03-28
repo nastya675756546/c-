@@ -66,7 +66,7 @@ namespace WindowsFormsApp2
             Program.f1.Show();
             this.Hide();
         }
-
+        string[] str;
         private void ZD22_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -75,6 +75,7 @@ namespace WindowsFormsApp2
             button2.Enabled = false;
 
             button1.Enabled = false;
+           
         }
 
         string saveFile = "";
@@ -100,7 +101,7 @@ namespace WindowsFormsApp2
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (textBox1.Lines.Length >= 1)
+            if (textBox1.Lines.Length >= 15)
             {
                 button1.Enabled = true;
             }
@@ -127,7 +128,7 @@ namespace WindowsFormsApp2
 
             textBox1.Text = text;
         }
-
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
             dataLabel.Text = DateTime.Now.ToLongDateString();
@@ -135,43 +136,25 @@ namespace WindowsFormsApp2
             timeLabel.Text = DateTime.Now.ToLongTimeString();
 
             fileLabel.Text = Path.GetFullPath(openFileDialog1.FileName).ToString();
+           
         }
-
-        string[] str;
-        string[] str0;
-        string wordp;
-        string[] words;
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
-            /*wordp = "";
-            string word = "";
-            int count = 0;
-            int count1 = 0;
-            int count2 = 0;
-            int count3 = 0;
-            string word1 = "";
-            string word2 = "";
-            string word3 = "";
-            int value = 0;*/
+            comboBox1.Items.Clear();
+            str = textBox1.Text.Split(' ', ';', '.', ',');
 
-            /*str = textBox1.Text.Split(' ', '.', ',', ':', ';');
-            str0 = str.Distinct().ToArray();
-            value = str0.Length;
-            words =new string[value];
-            //textBox1.Text += "\r\n";
-            for (int i = 0; i < value; i++)
-            {
-                words[i] = str0[i];
-                textBox1.Text +=words[i]+" "+ "\r\n";
-            }*/
-            
+            var clone = str.GroupBy(x => x)
+                .Where(g => g.Count() > 1)
+                .Select(y => y.Key)
+                .ToList();
+
+            comboBox1.Items.Add(String.Join(",", clone));
         }
 
-        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            e.Handled = true;
         }
     }
 }

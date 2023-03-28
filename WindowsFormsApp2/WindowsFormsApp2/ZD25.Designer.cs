@@ -109,7 +109,6 @@
             this.Controls.Add(this.button3);
             this.Name = "ZD25";
             this.Text = "ZD25";
-            this.Load += new System.EventHandler(this.ZD25_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

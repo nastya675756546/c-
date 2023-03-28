@@ -17,13 +17,8 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        int i = 0;
-
         private void ZD28_Load(object sender, EventArgs e)
         {
-            i++;
-            dataGridView1.Columns.Add("", "№");
-
             dataGridView1.Columns.Add("", "Имя");
 
             dataGridView1.Columns.Add("", "Фамилия");
@@ -32,60 +27,54 @@ namespace WindowsFormsApp2
 
             dataGridView1.Columns.Add("", "Средний балл");
 
-            dataGridView2.Columns.Add("", "№");
-
-            dataGridView2.Columns.Add("", "Имя");
-
-            dataGridView2.Columns.Add("", "Фамилия");
-
-            dataGridView2.Columns.Add("", "Класс");
-
-            dataGridView2.Columns.Add("", "Средний балл");
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void dataGridView1_MouseMove(object sender, MouseEventArgs e)
         {
             toolTip1.SetToolTip(dataGridView1, "заполните данные");
         }
-        string d="";
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            for (int i = 2; i < dataGridView1.Columns.Count;)
-            {
-                for (int j = 0; j < dataGridView1.Rows.Count; j++)
-                {
-                    if (dataGridView1[i,j]==dataGridView1[i,j+1])
-                    {
-                        MessageBox.Show("");
-                    }
-                }
-            }
-            
-        }
 
-        private void dataGridView1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
+        string[] a;
 
-        }
+        string[] b;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 2; i < dataGridView1.Columns.Count;)
-            {
-                for (int j = 0; j < dataGridView1.Rows.Count+1; j++)
+            textBox2.Clear();
+
+            textBox1.Clear();
+
+            a = new string[ dataGridView1.RowCount];
+
+              for (int j = 0; j < dataGridView1.RowCount; j++)
                 {
-                    if (dataGridView1[i, j] == dataGridView1[i, j + 1])
-                    {
-                        MessageBox.Show("");
-                    }
-                }
+                    a[j] = Convert.ToString( dataGridView1[1,j].Value);
+
+                    textBox2.Text += a[j];
             }
+
+            b = a.Distinct().ToArray();
+
+            for (int i = 0; i < b.Length; i++)
+            {
+                textBox1.Text += b[i];
+            }
+
+            if (textBox1.Text==textBox2.Text)
+            {
+                MessageBox.Show("В школе нет однофамильцев");
+            }
+            else
+            {
+                MessageBox.Show("В школе есть однофамильцы");
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.f1.Show();
+            this.Hide();
         }
     }
 }

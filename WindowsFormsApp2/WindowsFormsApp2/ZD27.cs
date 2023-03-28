@@ -20,7 +20,7 @@ namespace WindowsFormsApp2
 
         private void textBox4_MouseMove(object sender, MouseEventArgs e)
         {
-            toolTip1.SetToolTip(textBox4, "Введите целые числа через пробел");
+            toolTip1.SetToolTip(textBox4, "Введите целые числа через ;");
         }
 
         string pathF = "f.txt";
@@ -112,6 +112,21 @@ namespace WindowsFormsApp2
         {
             Program.f1.Show();
             this.Hide();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

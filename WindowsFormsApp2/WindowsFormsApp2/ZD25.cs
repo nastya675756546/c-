@@ -17,15 +17,13 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
         int i = 0;
+
         int value=0;
-        private void ZD25_Load(object sender, EventArgs e)
-        {
-            
-        }
+
         string text = "";
+
         private void button1_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 text = textBox1.Lines[value].ToString();
@@ -59,10 +57,7 @@ namespace WindowsFormsApp2
 
                 MessageBox.Show("Введите значение");
             }
-            
-            
-            
-            
+
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)

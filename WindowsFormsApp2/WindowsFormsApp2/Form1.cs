@@ -183,5 +183,10 @@ namespace WindowsFormsApp2
             Program.zd28.Show();
             this.Hide();
         }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
